@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-x {
+    @apply px-4 py-6 sm:px-8 md:px-10 lg:px-16 xl:px-32
+}
+
+.menu-link {
+    @apply px-4 py-2 text-base font-semibold hover:text-white hover:underline
+}
+
+.product-card {
+    @apply bg-cover bg-center rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 transition duration-300
+}
+
+.product-card > .card {
+    @apply flex flex-col items-center justify-center p-8 bg-black/60 text-white hover:bg-black/40 transition duration-300 h-full
+}
+
+.content-title {
+    @apply text-[2rem] font-semibold
+}
+
+.img-gallery {
+    @apply w-full aspect-video shadow-lg border-4 md:border-[6px] border-white object-cover object-center group-hover:border-blue-500 transition duration-200 group-hover:rotate-3
+}
+
+.input {
+    @apply px-4 py-3 rounded-xl w-full focus:ring focus:ring-violet-500/30 border border-gray-200 focus:border-violet-500 outline-none transition duration-300 bg-white text-sm font-semibold
+}
+
+.gallery-button {
+    @apply text-sm font-semibold px-4 py-3 bg-black/30 text-center hover:bg-black/50 flex flex-col items-center justify-center
+}
+
+.input-x {
+    @apply w-full px-4 py-2 transition duration-300 bg-gray-200 border border-gray-200 rounded-md outline-none focus:border-blue-500 focus:ring focus:ring-blue-500/30
+}

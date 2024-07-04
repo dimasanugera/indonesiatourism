@@ -1,0 +1,280 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/app.css">
+    <link rel=" shortcut icon" type="image/png" href="assets/favicon.png" />
+    <title>Indonesia Tourism</title>
+</head>
+
+<body>
+    <!-- sidebar -->
+    <div id="sidebar"
+        class="fixed top-0 bottom-0 left-0 right-0 flex flex-col w-0 h-full overflow-x-hidden transition-all duration-300 ease-in-out bg-gradient-to-br from-violet-600 to-blue-500">
+        <div
+            class="flex flex-row items-center justify-between gap-4 text-white border-b container-x border-b-white/30 ">
+            <span class="text-lg font-semibold">Menu</span>
+            <button id="sidebar-close" class="p-2 transition duration-200 rounded-full hover:bg-white/20">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col items-center justify-center flex-grow gap-4 font-semibold text-white">
+            <a href="#home"
+                class="px-6 py-3 transition duration-200 rounded-md hover:bg-white/20 min-w-[200px] flex flex-row items-center justify-center"
+                onclick="closeSidebar()">Home</a>
+            <a href="#wisata"
+                class="px-6 py-3 transition duration-200 rounded-md hover:bg-white/20 min-w-[200px] flex flex-row items-center justify-center"
+                onclick="closeSidebar()">Wisata</a>
+            <a href="#hotel"
+                class="px-6 py-3 transition duration-200 rounded-md hover:bg-white/20 min-w-[200px] flex flex-row items-center justify-center"
+                onclick="closeSidebar()">Hotel</a>
+            <a href="#about"
+                class="px-6 py-3 transition duration-200 rounded-md hover:bg-white/20 min-w-[200px] flex flex-row items-center justify-center"
+                onclick="closeSidebar()">About</a>
+        </div>
+        <div
+            class="flex container-x flex-col !px-3 text-sm border-t border-t-white/20 text-white/50 items-center justify-center">
+            <span class="text-center">&copy; 2024 - Dimas</span>
+        </div>
+    </div>
+
+    <div class="flex flex-col w-full min-h-screen bg-gray-100">
+        <!-- header -->
+        <div class="bg-[url('images/background.png')] bg-cover bg-center">
+            <div id="home"
+                class="flex flex-col text-white container-x bg-gradient-to-br from-green-700/60 to-yellow-600/60">
+                <!-- navbar -->
+                <div class="flex flex-row items-center justify-between gap-4">
+                    <span class="text-lg font-semibold">IDMTourism</span>
+                    <div class="flex-row items-center hidden gap-4 md:flex text-white/90">
+                        <a href="#home" class="menu-link">Home</a>
+                        <a href="#wisata" class="menu-link">Wisata</a>
+                        <a href="#hotel" class="menu-link">Hotels</a>
+                        <a href="#about" class="menu-link">About</a>
+                    </div>
+                    <button id="sidebar-show"
+                        class="flex p-2 transition duration-200 rounded-full md:hidden hover:bg-white/30">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- header content -->
+                <div class="flex flex-col items-center justify-center w-full gap-4 py-16 lg:py-32z md:gap-8">
+                    <span class="text-5xl md:text-[4rem] font-bold">Indonesia Tourism</span>
+                    <span class="text-xl">Explore the best culture, tourism and accommodation in the land of a thousand islands</span>
+                    <div class="flex flex-col gap-8 mt-6">
+                        <a href="#wisata"
+                            class="flex flex-row items-center justify-center gap-3 px-10 py-3 font-semibold text-green-600 transition duration-300 bg-white rounded-full shadow-lg hover:bg-gray-200 hover:-translate-y-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                              </svg>                              
+                            Explore Wisata
+                        </a>
+                        <a href="pages/book.html"
+                            class="flex flex-row items-center gap-3 px-10 py-3 font-semibold text-white transition duration-300 rounded-full shadow-lg bg-black/30 hover:bg-black/50 hover:-translate-y-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819" />
+                              </svg>                              
+                            Book a Hotel
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- content -->
+
+        <div class="hidden">
+            <div class="bg-[url('wisata/borobudur.jpg')]"></div>
+            <div class="bg-[url('wisata/gili.jpg')]"></div>
+            <div class="bg-[url('wisata/komodo.jpg')]"></div>
+            <div class="bg-[url('wisata/lombok.jpg')]"></div>
+            <div class="bg-[url('wisata/rinjani.jpg')]"></div>
+            <div class="bg-[url('wisata/ubud.jpg')]"></div>
+        </div>
+        <!-- Wisata -->
+        <div id="wisata" class="flex flex-col px-6 container-x text-gray-800 items-center gap-12 !py-16">
+            <span class="text-center content-title">Best Wisata in Indonesia</span>
+            <div id="wisata-container"
+                class="flex flex-col w-full gap-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 lg:gap-12">
+
+                <!-- wisatas -->
+                
+            </div>
+        </div>
+
+        <!-- Hotel -->
+        <div id="hotel" class="flex flex-col px-6 container-x text-white bg-gray-800 items-center gap-12 !py-16">
+            <div class="flex flex-col items-center justify-center gap-1">
+                <span class="text-center content-title">Best Hotel in Indonesia</span>
+                <span class="text-lg text-center">Book a hotel in indonesia to explore more about beautifulness of nature indonesia</span>
+            </div>
+            <div id="hotel-container" class="flex flex-col gap-4 md:grid md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <!-- hotels -->
+            </div>
+        </div>
+
+        <!-- About -->
+        <div id="about" class="flex flex-col px-6 container-x text-gray-800 items-center gap-12 !py-16">
+            <div class="flex flex-col items-center justify-center gap-8">
+                <div class="flex flex-col items-center justify-center w-full max-w-3xl gap-4">
+                    <span class="text-center content-title">About</span>
+                    <span class="text-lg text-center">Indonesia Tourism is your ultimate gateway to discovering the natural wonders of Indonesia, the world's largest archipelago. Our mission is to showcase the breathtaking beauty, diverse landscapes, and rich biodiversity that make Indonesia a unique and captivating destination for travelers from around the globe.</span>
+                </div>
+                <div class="flex flex-col items-center justify-center w-full max-w-3xl gap-4">
+                    <span class="text-center content-title">Our Vision</span>
+                    <span class="text-lg text-center">At Indonesia Tourism, we envision a world where every traveler can experience the awe-inspiring beauty of Indonesia's natural landscapes. From the pristine beaches and vibrant coral reefs to the majestic mountains and lush rainforests, we aim to inspire and guide you through the hidden gems and iconic landmarks that define Indonesia's unparalleled charm.</span>
+                </div>
+                <div class="flex flex-col items-center justify-center w-full max-w-3xl gap-4">
+                    <span class="text-center content-title">Our Mission</span>
+                    <span class="text-lg text-center">Our mission is to provide comprehensive and insightful information about Indonesia's natural attractions, ensuring that every visitor can fully immerse themselves in the country's stunning environments. We strive to promote sustainable tourism practices that preserve and protect Indonesia's natural heritage for future generations.</span>
+                </div>
+                <div class="flex flex-col items-center justify-center w-full max-w-3xl gap-4">
+                    <span class="text-center content-title">Our Social Media</span>
+                </div>
+            </div>
+            <div
+                class="flex flex-col w-full gap-6 py-6 border-t border-b border-dashed sm:grid sm:grid-cols-2 md:grid-cols-3 border-t-gray-300 border-b-gray-300">
+                <!-- content chat / contacts -->
+                <a href="https://wa.me/+6282249925346" target="_blank" class="flex flex-row items-center gap-4 group">
+                    <div
+                        class="flex flex-col items-center justify-center text-green-500 bg-white border border-gray-200 rounded-full shadow-sm w-14 h-14">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col flex-1 gap-1">
+                        <span class="font-semibold group-hover:underline">Whatsapp</span>
+                        <span class="text-sm text-gray-500">We provide trip and travel services</span>
+                    </div>
+                </a>
+                <a href="https://t.me/dimasanugrah" target="_blank" class="flex flex-row items-center gap-4 group">
+                    <div
+                        class="flex flex-col items-center justify-center text-red-500 bg-white border border-gray-200 rounded-full shadow-sm w-14 h-14">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" /></svg>
+                    </div>
+                    <div class="flex flex-col flex-1 gap-1">
+                        <span class="font-semibold group-hover:underline">Youtube</span>
+                        <span class="text-sm text-gray-500">View our Youtube channel</span>
+                    </div>
+                </a>
+                <a href="https://instagram.com/tournesia" target="_blank" class="flex flex-row items-center gap-4 group">
+                    <div
+                        class="flex flex-col items-center justify-center text-red-500 bg-white border border-gray-200 rounded-full shadow-sm w-14 h-14">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col flex-1 gap-1">
+                        <span class="font-semibold group-hover:underline">Instagram</span>
+                        <span class="text-sm text-gray-500">Explre the beautifulness photos of nature.</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div
+            class="flex flex-col items-center justify-center text-gray-500 bg-gray-200 border-t border-dashed container-x border-t-gray-300">
+            <span>&copy; 2024 - Tugas Uas Dimas</span>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    </div>
+
+    <!-- up button -->
+    <a id="btn-top" href="#"
+        class="fixed bottom-0 right-0 hidden p-4 m-8 text-white transition duration-200 bg-blue-500 rounded-full shadow-lg hover:bg-blue-600">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+        </svg>
+    </a>
+
+    <!-- modal dialog ketika gambar di pencet -->
+    <div id="modal"
+        class="fixed top-0 bottom-0 left-0 right-0 flex flex-col hidden w-full h-screen overflow-hidden text-white bg-black/40 backdrop-blur-md backdrop-filter">
+        <div
+            class="flex flex-row items-center justify-between gap-4 text-lg border-b container-x !py-2 border-b-white/30">
+            <span class="font-semibold">Detail Gambar</span>
+            <button id="modal-close" class="p-2 transition duration-200 rounded-full hover:bg-white/10">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col items-center justify-center flex-grow py-12 container-x">
+            <div class="flex flex-col items-center justify-center bg-gray-800 shadow-lg">
+                <img id="modal-image" src="assets/images/jawara-cover.jpg" alt=""
+                    class="object-cover object-center max-h-[400px] aspect-video">
+                <a id="modal-link" target="_blank" href="assets/images/jawara-cover.jpg"
+                    class="flex flex-row items-center justify-center w-full gap-4 px-6 py-4 font-semibold text-white bg-blue-500 hover:bg-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                    </svg>
+                    Download Gambar
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="konfigurasi.js"></script>
+    <script src="index.js"></script>
+    <script>
+        let sidebar = document.getElementById('sidebar')
+        let sidebarClose = document.getElementById('sidebar-close')
+        let sidebarShow = document.getElementById('sidebar-show');
+        sidebarShow.addEventListener('click', () => {
+            sidebar.style.width = "100%"
+        })
+        sidebarClose.addEventListener('click', () => {
+            sidebar.style.width = "0"
+        })
+        let closeSidebar = () => {
+            sidebar.style.width = "0"
+        }
+
+        let btnTop = document.getElementById('btn-top')
+        let scrollAction = () => {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btnTop.style.display = "flex";
+            } else {
+                btnTop.style.display = "none";
+            }
+        }
+        document.onscroll = scrollAction;
+
+        // modal
+        let modal = document.getElementById('modal')
+        let modalClose = document.getElementById('modal-close')
+        let modalImage = document.getElementById('modal-image')
+        let modalLink = document.getElementById('modal-link')
+        let handleClick = (event) => {
+            modal.classList.remove('hidden')
+            modalImage.src = event.children[0].src
+            modalLink.href = event.children[0].src
+        }
+        modalClose.addEventListener('click', () => {
+            modal.classList.add('hidden')
+        })
+    </script>
+</body>
+
+</html>
